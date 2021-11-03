@@ -1,0 +1,23 @@
+{
+  "name": "webrtc-p2p-ss-video-audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "getusermedia": "^2.0.1",
+    "simple-peer": "^9.11.0",
+    "wrtc-peerconnection": "0.0.2"
+  }
+}
