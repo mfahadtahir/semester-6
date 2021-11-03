@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5GAa8ELLEeuo16gPWzRPOg" name="model">
+  <packagedElement xmi:type="uml:Component" xmi:id="_PnV54ELMEeuo16gPWzRPOg" name="Sales Server">
+    <packagedElement xmi:type="uml:Component" xmi:id="_Ya-5wELMEeuo16gPWzRPOg" name="Transaction processor"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_fi8a8ELMEeuo16gPWzRPOg" name="Accounting Driver"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_y9nD4ELMEeuo16gPWzRPOg" name="Till"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ADaAAELOEeuo16gPWzRPOg" name="Message queue"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_FQCc8ELOEeuo16gPWzRPOg" name="Accounting System"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_iRYsQELOEeuo16gPWzRPOg" name="sales message">
+    <generalization xmi:type="uml:Generalization" xmi:id="_t6nZMELOEeuo16gPWzRPOg" general="_Ya-5wELMEeuo16gPWzRPOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oEuj4ELOEeuo16gPWzRPOg" client="_y9nD4ELMEeuo16gPWzRPOg" supplier="_iRYsQELOEeuo16gPWzRPOg"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p__9wELOEeuo16gPWzRPOg" client="_ADaAAELOEeuo16gPWzRPOg" supplier="_iRYsQELOEeuo16gPWzRPOg"/>
+  <packagedElement xmi:type="uml:ComponentRealization" xmi:id="_OlVi8ELPEeuo16gPWzRPOg" client="_Ya-5wELMEeuo16gPWzRPOg" supplier="_fi8a8ELMEeuo16gPWzRPOg"/>
+  <packagedElement xmi:type="uml:ComponentRealization" xmi:id="_P7KGYELPEeuo16gPWzRPOg" client="_fi8a8ELMEeuo16gPWzRPOg" supplier="_FQCc8ELOEeuo16gPWzRPOg"/>
+</uml:Model>
